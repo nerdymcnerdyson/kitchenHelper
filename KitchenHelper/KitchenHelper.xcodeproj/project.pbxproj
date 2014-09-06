@@ -10,6 +10,8 @@
 		730C195019B53AD600658C3E /* MBYRFireBaseManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 730C194F19B53AD600658C3E /* MBYRFireBaseManger.m */; };
 		730C195319B5597200658C3E /* MBYRTimerTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 730C195219B5597200658C3E /* MBYRTimerTableDelegate.m */; };
 		730C195619B5683700658C3E /* MBYRTimerCreaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 730C195519B5683700658C3E /* MBYRTimerCreaterViewController.m */; };
+		730C195C19BA144700658C3E /* MBYRTimerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 730C195B19BA144700658C3E /* MBYRTimerClass.m */; };
+		730C195F19BB5ECD00658C3E /* MBYRTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 730C195E19BB5ECD00658C3E /* MBYRTimerManager.m */; };
 		7345136F19B533A6008985B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345136E19B533A6008985B7 /* Foundation.framework */; };
 		7345137119B533A6008985B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345137019B533A6008985B7 /* CoreGraphics.framework */; };
 		7345137319B533A6008985B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345137219B533A6008985B7 /* UIKit.framework */; };
@@ -46,6 +48,10 @@
 		730C195219B5597200658C3E /* MBYRTimerTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBYRTimerTableDelegate.m; path = TimerTable/core/MBYRTimerTableDelegate.m; sourceTree = "<group>"; };
 		730C195419B5683700658C3E /* MBYRTimerCreaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBYRTimerCreaterViewController.h; path = TimerCreator/ViewController/MBYRTimerCreaterViewController.h; sourceTree = "<group>"; };
 		730C195519B5683700658C3E /* MBYRTimerCreaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBYRTimerCreaterViewController.m; path = TimerCreator/ViewController/MBYRTimerCreaterViewController.m; sourceTree = "<group>"; };
+		730C195A19BA144700658C3E /* MBYRTimerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBYRTimerClass.h; path = Model/MBYRTimerClass.h; sourceTree = "<group>"; };
+		730C195B19BA144700658C3E /* MBYRTimerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBYRTimerClass.m; path = Model/MBYRTimerClass.m; sourceTree = "<group>"; };
+		730C195D19BB5ECD00658C3E /* MBYRTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBYRTimerManager.h; path = Core/MBYRTimerManager.h; sourceTree = "<group>"; };
+		730C195E19BB5ECD00658C3E /* MBYRTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBYRTimerManager.m; path = Core/MBYRTimerManager.m; sourceTree = "<group>"; };
 		7345136B19B533A6008985B7 /* KitchenHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7345136E19B533A6008985B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7345137019B533A6008985B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,12 +141,16 @@
 				7345138319B533A6008985B7 /* Main_iPad.storyboard */,
 				730C194E19B53AD600658C3E /* MBYRFireBaseManger.h */,
 				730C194F19B53AD600658C3E /* MBYRFireBaseManger.m */,
+				730C195D19BB5ECD00658C3E /* MBYRTimerManager.h */,
+				730C195E19BB5ECD00658C3E /* MBYRTimerManager.m */,
 				7345138619B533A6008985B7 /* MBYRViewController.h */,
 				7345138719B533A6008985B7 /* MBYRViewController.m */,
 				730C195419B5683700658C3E /* MBYRTimerCreaterViewController.h */,
 				730C195519B5683700658C3E /* MBYRTimerCreaterViewController.m */,
 				730C195119B5597200658C3E /* MBYRTimerTableDelegate.h */,
 				730C195219B5597200658C3E /* MBYRTimerTableDelegate.m */,
+				730C195A19BA144700658C3E /* MBYRTimerClass.h */,
+				730C195B19BA144700658C3E /* MBYRTimerClass.m */,
 				7345138919B533A6008985B7 /* Images.xcassets */,
 				7345137519B533A6008985B7 /* Supporting Files */,
 			);
@@ -311,7 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				730C195019B53AD600658C3E /* MBYRFireBaseManger.m in Sources */,
+				730C195C19BA144700658C3E /* MBYRTimerClass.m in Sources */,
 				7345138819B533A6008985B7 /* MBYRViewController.m in Sources */,
+				730C195F19BB5ECD00658C3E /* MBYRTimerManager.m in Sources */,
 				730C195619B5683700658C3E /* MBYRTimerCreaterViewController.m in Sources */,
 				7345137F19B533A6008985B7 /* MBYRAppDelegate.m in Sources */,
 				7345137B19B533A6008985B7 /* main.m in Sources */,

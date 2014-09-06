@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+//declare events here.
+
+
 @interface MBYRFireBaseManger : NSObject
 +(instancetype) sharedInstance;
 @end
